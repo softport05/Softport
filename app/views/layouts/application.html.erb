@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SinglePage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "application.css" %> 
+    <%= stylesheet_link_tag "google-fonts.css" %> 
+    <%= stylesheet_link_tag "fonts.css" %> 
+    <%= stylesheet_link_tag "revslider/settings.css" %>
+    <%= stylesheet_link_tag "style.css" %>
+    <%= stylesheet_link_tag "onepagepro-style-custom.css" %> 
+    <%= stylesheet_link_tag "page-builder.css" %> 
+    <%= stylesheet_link_tag "quform/base.css" %>
+
+  </head>
+
+  <body data-rsssl=1 class="home page-template-default page page-id-3999 gdlr-core-body onepagepro-body onepagepro-body-front onepagepro-full  onepagepro-with-sticky-navigation gdlr-core-link-to-lightbox">
+    <%= yield %>
+    <%= javascript_include_tag "jquery/jquery.js" %>
+    <%= javascript_include_tag "jquery/jquery-migrate.min.js" %>
+    <%= javascript_include_tag "main.js" %>
+    <%= javascript_include_tag "revslider/jquery.themepunch.tools.min.js" %>
+    <%= javascript_include_tag "revslider/jquery.themepunch.revolution.min.js" %>
+    <%= javascript_include_tag "jquery/ui/effect.min.js" %>
+    <%= javascript_include_tag "scripts.js" %>
+    <%= javascript_include_tag "combine.min.js" %>
+    <%= javascript_include_tag "page-builder.js" %>
+
+    <%= javascript_include_tag "quform/plugins.js" %>
+    <%= javascript_include_tag "quform/scripts.js" %>
+    <%= javascript_include_tag "revslider/extensions/revolution.extension.slideanims.min.js" %>
+    <%= javascript_include_tag "revslider/extensions/revolution.extension.layeranimation.min.js" %>
+    <%= javascript_include_tag "revslider/extensions/revolution.extension.kenburn.min.js" %>
+    <%= javascript_include_tag "revslider/extensions/revolution.extension.navigation.min.js" %>
+    <%= javascript_include_tag "revslider/extensions/revolution.extension.parallax.min.js" %>
+  </body>
+</html>
