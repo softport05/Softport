@@ -1,6 +1,6 @@
-lock "~> 3.12.0"
+lock "~> 3.17.3"
 set :application, "softport"
-set :user,            'root'
+set :user,            'ubuntu'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 

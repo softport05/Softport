@@ -5,7 +5,6 @@ require "capistrano/setup"
 require "capistrano/deploy"
 
 # Include capistrano-rails
-require "whenever/capistrano"
 require 'capistrano/rails'
 require 'capistrano/rvm'
 require 'capistrano/bundler'
@@ -15,7 +14,6 @@ require 'capistrano/nginx'
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
 require 'capistrano/rails/collection'
-require 'capistrano/sidekiq'
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
