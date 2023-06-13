@@ -515,7 +515,7 @@
                                         </div>
                                         <div class="gdlr-core-flexslider flexslider gdlr-core-js-2 " data-type="carousel" data-column="3" data-nav="navigation" data-nav-parent="gdlr-core-blog-item" data-disable-autoslide="1">
                                           <ul class="slides">
-                                            <% @news.first(10).each do |news| %>
+                                            <% @news.first(10)&.each do |news| %>
                                             <li class="gdlr-core-item-mglr">
                                               <div class="gdlr-core-blog-grid ">
                                                 <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover news-image">
