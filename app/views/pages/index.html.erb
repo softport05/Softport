@@ -514,26 +514,7 @@
                                           <div class="gdlr-core-flexslider-nav gdlr-core-plain-circle-style gdlr-core-absolute gdlr-core-right" style="padding-top: 15px;"></div>
                                         </div>
                                         <div class="gdlr-core-flexslider flexslider gdlr-core-js-2 " data-type="carousel" data-column="3" data-nav="navigation" data-nav-parent="gdlr-core-blog-item" data-disable-autoslide="1">
-                                          <ul class="slides">
-                                            <% @news.first(10)&.each do |news| %>
-                                            <li class="gdlr-core-item-mglr">
-                                              <div class="gdlr-core-blog-grid ">
-                                                <div class="gdlr-core-blog-thumbnail gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover news-image">
-                                                  <%= link_to news&.url, target: '_blank' do %>
-                                                  <%= image_tag news&.urlToImage, alt: "", width:"700", height: "500"%>
 
-                                                  <% end %>
-                                                </div>
-                                                <div class="gdlr-core-blog-grid-content-wrap gdlr-core-js" data-sync-height="blog-grid-content-wrap">
-                                                  <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 22px;font-weight: 700;letter-spacing: 0px;"><a href="#" ><%= news&.title %></a></h3>
-                                                  <div class="gdlr-core-blog-info-wrapper gdlr-core-skin-divider"><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-date"><span class="gdlr-core-head" ><i class="fa fa-clock-o"></i></span><a href="#"><%= news&.publishedAt.to_time.strftime('%b %d, %Y')%></a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-author"><span class="gdlr-core-head" ><i class="fa fa-pencil"></i></span><a href="#" title="Posts by superuser" rel="author"><%= news&.author %></a></span><span class="gdlr-core-blog-info gdlr-core-blog-info-font gdlr-core-skin-caption gdlr-core-blog-info-category"><span class="gdlr-core-head" ><i class="fa fa-folder-o"></i></span><a href="#" rel="tag">Technology</a></span>
-                                                  </div>
-                                                  <div class="gdlr-core-blog-content"><%= truncate news&.content&.html_safe, length: 90, separator: /\w+/ %>
-                                                  </div>
-                                                </div>
-                                              </li>
-                                              <% end %>
-                                            </ul>
                                           </div>
                                         </div>
                                       </div>
@@ -670,7 +651,7 @@
                                               <div class="gdlr-core-pbf-element">
                                                 <div class="gdlr-core-icon-list-item gdlr-core-item-pdlr gdlr-core-item-pdb ">
                                                   <ul>
-                                                    <li class=" gdlr-core-skin-divider" style="margin-bottom: 20px;"><span class="gdlr-core-icon-list-icon-wrap"><i class="gdlr-core-icon-list-icon icon_pin_alt" style="font-size: 16px;width: 16px;" ></i></span><span class="gdlr-core-icon-list-content" style="font-size: 15px;">112-114, Gandhi Park Colony, Radio Colony, Residency Area, Indore.</span></li>
+                                                    <li class=" gdlr-core-skin-divider" style="margin-bottom: 20px;"><span class="gdlr-core-icon-list-icon-wrap"><i class="gdlr-core-icon-list-icon icon_pin_alt" style="font-size: 16px;width: 16px;" ></i></span><span class="gdlr-core-icon-list-content" style="font-size: 15px;">a112-114, Gandhi Park Colony, Radio Colony, Residency Area, Indore.</span></li>
                                                     <li class=" gdlr-core-skin-divider" style="margin-bottom: 20px;"><a href="#"><span class="gdlr-core-icon-list-icon-wrap"  ><i class="gdlr-core-icon-list-icon icon_mail_alt" style="font-size: 16px;width: 16px;" ></i></span><span class="gdlr-core-icon-list-content" style="font-size: 15px;"  >contact@softport.in</span></a></li>
                                                     <li class=" gdlr-core-skin-divider" style="margin-bottom: 20px;"><span class="gdlr-core-icon-list-icon-wrap"><i class="gdlr-core-icon-list-icon icon_phone" style="font-size: 16px;width: 16px;" ></i></span><span class="gdlr-core-icon-list-content" style="font-size: 15px;">Phone : +(91) 9755436473</span></li>
                                                     <li class=" gdlr-core-skin-divider" style="margin-bottom: 20px;"><span class="gdlr-core-icon-list-icon-wrap"><i class="gdlr-core-icon-list-icon icon_document_alt" style="font-size: 16px;width: 16px;" ></i></span><span class="gdlr-core-icon-list-content" style="font-size: 15px;">Fax : +(91) 9755436473</span></li>
